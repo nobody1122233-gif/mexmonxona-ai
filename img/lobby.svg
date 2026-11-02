@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" preserveAspectRatio="xMidYMid slice"><rect width="800" height="560" fill="#eef2f7"/><rect y="420" width="800" height="140" fill="#c9b793"/>
+<path d="M250 420 V200 Q250 110 400 60 Q550 110 550 200 V420 Z" fill="#dfe8f2" stroke="#d9a23b" stroke-width="6"/>
+<rect x="60" y="240" width="40" height="180" fill="#1c4e8a"/><rect x="700" y="240" width="40" height="180" fill="#1c4e8a"/>
+<ellipse cx="80" cy="230" rx="50" ry="40" fill="#2a8a4b"/><ellipse cx="720" cy="230" rx="50" ry="40" fill="#2a8a4b"/>
+<line x1="400" y1="150" x2="400" y2="180" stroke="#123560" stroke-width="6"/><circle cx="400" cy="144" r="10" fill="#d9a23b"/>
+<rect x="340" y="180" width="120" height="90" rx="26" fill="#fff" stroke="#123560" stroke-width="6"/>
+<rect x="356" y="198" width="88" height="48" rx="18" fill="#123560"/><circle cx="380" cy="222" r="9" fill="#2fb7ab"/><circle cx="420" cy="222" r="9" fill="#2fb7ab"/>
+<path d="M385 238 Q400 248 415 238" stroke="#2fb7ab" stroke-width="4" fill="none"/>
+<rect x="350" y="280" width="100" height="110" rx="20" fill="#fff" stroke="#123560" stroke-width="6"/>
+<circle cx="400" cy="330" r="22" fill="#d9a23b"/><text x="400" y="338" font-family="Arial" font-size="22" font-weight="800" text-anchor="middle" fill="#123560">AI</text>
+<rect x="320" y="270" width="26" height="80" rx="13" fill="#fff" stroke="#123560" stroke-width="5"/><rect x="454" y="270" width="26" height="80" rx="13" fill="#fff" stroke="#123560" stroke-width="5"/>
+<rect x="170" y="380" width="460" height="130" rx="10" fill="#1c4e8a"/><rect x="160" y="365" width="480" height="24" rx="8" fill="#d9a23b"/>
+<circle cx="560" cy="350" r="14" fill="#d9a23b"/><rect x="552" y="360" width="16" height="6" fill="#d9a23b"/></svg>

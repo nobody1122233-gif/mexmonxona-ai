@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UZB MEHMONXONA AI - mehmonxona sohasida sun'iy intellekt haqida sayt.">
+  <title>Band qilish | UZB MEHMONXONA AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A8%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Kutubxonalar: ikonkalar, animatsiya, slayder -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="progress"></div>
+
+  <header>
+    <div class="konteyner header-ichi">
+      <a href="index.html" class="logo"><i class="bi bi-buildings"></i>UZB MEHMONXONA <span>AI</span></a>
+      <nav id="menyu"><ul><li><a href="index.html">Bosh sahifa</a></li><li><a href="ai-haqida.html">AI haqida</a></li><li><a href="xizmatlar.html">Xizmatlar</a></li><li><a href="xonalar.html">Xonalar</a></li><li class="dropdown"><button type="button" class="dropdown-tugma" aria-expanded="false" aria-haspopup="true">Ko'proq <i class="bi bi-chevron-down"></i></button><ul class="dropdown-menyu"><li><a href="galereya.html"><i class="bi bi-images"></i> Galereya</a></li><li><a href="maqolalar.html"><i class="bi bi-journal-text"></i> Maqolalar</a></li><li><a href="aloqa.html"><i class="bi bi-envelope"></i> Aloqa</a></li></ul></li><li><a href="bron.html" class="tugma kichik"><i class="bi bi-calendar-check"></i> Band qilish</a></li></ul></nav>
+      <div class="header-ong">
+        <button class="ikon-tugma" id="temaTugma" aria-label="Kun va tun rejimi"></button>
+        <button class="ikon-tugma menyu-tugma" id="menyuTugma" aria-label="Menyuni ochish" aria-expanded="false"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+    <div class="naqsh"></div>
+  </header>
+<div class="sahifa-bosh"><div class="konteyner"><div class="yol"><a href="index.html">Bosh sahifa</a> / Band qilish</div><h1>Band qilish</h1><p>Sana va xonani tanlang, narx darrov hisoblanadi.</p></div></div>
+
+  <main>
+    <section>
+      <div class="konteyner bron-grid">
+        <form id="bronForma" novalidate>
+          <h2>Bron ma'lumotlari</h2>
+          <label for="xonaTanla">Xona turi</label>
+          <select id="xonaTanla"></select>
+
+          <div class="qator-ikki">
+            <div><label for="kirish">Kirish sanasi</label><input type="date" id="kirish"></div>
+            <div><label for="chiqish">Chiqish sanasi</label><input type="date" id="chiqish"></div>
+          </div>
+          <div class="xato" id="sanaXato"></div>
+
+          <label for="mehmon">Mehmonlar soni</label>
+          <input type="number" id="mehmon" value="2" min="1" max="6">
+          <div class="xato" id="mehmonXato"></div>
+
+          <label>Qo'shimcha xizmatlar</label>
+          <div class="tanlov">
+            <label><input type="checkbox" class="qoshimcha" data-narx="60000" data-tur="kecha"> Nonushta (60 000 / kishi / kecha)</label>
+            <label><input type="checkbox" class="qoshimcha" data-narx="150000" data-tur="bir"> Aeroport transferi (150 000)</label>
+            <label><input type="checkbox" class="qoshimcha" data-narx="200000" data-tur="bir"> Spa (200 000)</label>
+          </div>
+
+          <div class="qator-ikki">
+            <div><label for="bIsm">Ismingiz</label><input type="text" id="bIsm"><div class="xato" id="bIsmXato"></div></div>
+            <div><label for="bTel">Telefon</label><input type="tel" id="bTel" placeholder="+998 90 123 45 67"><div class="xato" id="bTelXato"></div></div>
+          </div>
+
+          <button type="submit" class="tugma" style="margin-top:14px"><i class="bi bi-calendar-check"></i> Band qilish</button>
+          <div class="muvaffaqiyat" id="muvaffaqiyat">Rahmat! So'rovingiz qabul qilindi. Administrator tez orada siz bilan bog'lanadi.</div>
+        </form>
+
+        <aside class="hisob">
+          <img id="hRasm" src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=900&q=75" data-zaxira="img/xona-standart.svg" alt="">
+          <h3 id="hNom"></h3>
+          <div class="qator"><span>Muddat</span><span id="hKecha"></span></div>
+          <div class="qator"><span>Xona</span><span id="hXona"></span></div>
+          <div class="qator"><span>Qo'shimcha</span><span id="hQoshimcha"></span></div>
+          <div class="qator jami"><span>Jami</span><span id="hJami"></span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="konteyner footer-ichi">
+      <div>
+        <b>UZB MEHMONXONA AI</b>
+        <p>Mehmonxonada sun'iy intellekt haqida o'zbek tilidagi sayt: tushuntirish, xizmatlar va namunaviy yordamchi.</p>
+        <div class="ijtimoiy">
+          <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <b>Sahifalar</b>
+        <a href="ai-haqida.html">AI haqida</a>
+        <a href="xizmatlar.html">Xizmatlar</a>
+        <a href="xonalar.html">Xonalar</a>
+        <a href="galereya.html">Galereya</a>
+      </div>
+      <div>
+        <b>Yana</b>
+        <a href="maqolalar.html">Maqolalar</a>
+        <a href="#" data-chat-och>Demo chat</a>
+        <a href="bron.html">Band qilish</a>
+        <a href="aloqa.html">Aloqa</a>
+      </div>
+      <div>
+        <b>Yangiliklarga obuna</b>
+        <p>Yangi maqolalar emailingizga keladi.</p>
+        <form class="obuna" id="obunaForma" novalidate>
+          <input type="email" id="obunaEmail" placeholder="Email" aria-label="Email">
+          <button type="submit" aria-label="Obuna bo'lish"><i class="bi bi-send"></i></button>
+        </form>
+      </div>
+    </div>
+    <p class="huquq">&copy; <span id="yil">2026</span> UZB MEHMONXONA AI. Barcha huquqlar himoyalangan. Rasmlar: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>.</p>
+  </footer>
+
+  <div class="modal" id="modal"><div class="modal-ichi" id="modalIchi"></div></div>
+  <div id="xabarcha" role="status"></div>
+  <div class="chat-oyna" id="chatOyna" role="dialog" aria-label="Mehmonxona yordamchisi">
+    <div class="chat-bosh">
+      <span><i class="bi bi-robot"></i> Mehmonxona yordamchisi</span>
+      <button id="chatTozala" type="button" aria-label="Suhbatni tozalash" title="Tozalash"><i class="bi bi-arrow-counterclockwise"></i></button>
+      <button id="chatYopish" type="button" aria-label="Chatni yopish" title="Yopish"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="chat-xabarlar" id="chatXabarlar" aria-live="polite"></div>
+    <div class="tezkor">
+      <button type="button">Narx qancha?</button>
+      <button type="button">Nonushta soat nechada?</button>
+      <button type="button">Wi-Fi parol</button>
+      <button type="button">Hovuz bormi?</button>
+      <button type="button">Xonani band qilish</button>
+    </div>
+    <form class="chat-forma" id="chatForma">
+      <input type="text" id="chatInput" placeholder="Savolingizni yozing..." aria-label="Savolingiz" autocomplete="off">
+      <button type="submit" aria-label="Yuborish"><i class="bi bi-send-fill"></i></button>
+    </form>
+    <p class="chat-eslatma">Demo: haqiqiy AI emas, kalit so'zlar bilan ishlaydi.</p>
+  </div>
+  <div class="pastki-tugmalar">
+    <button type="button" class="robot-tugma" id="robotTugma" aria-label="Chatni ochish" title="Yordamchi bilan suhbat" aria-expanded="false" aria-controls="chatOyna"><i class="bi bi-robot"></i></button>
+    <button id="tepaga" aria-label="Tepaga qaytish"><i class="bi bi-arrow-up"></i></button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+  
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
